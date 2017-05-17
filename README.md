@@ -70,7 +70,10 @@ occur either *zero* or *more* times.
   console.log(/'\d*'/.test("''"));
     // → true`
 
+This concludes the end of the first part about regular expressions, yes only the first part. I believe there has been 
+entire books written about regular expressions, so that leaves me to write many more notes about them in the future.
 
+Good luck programming!
 
 
 
