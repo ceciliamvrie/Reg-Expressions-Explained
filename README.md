@@ -40,13 +40,13 @@ in between that set of brackets, the sequence of the characters inside these bra
 Applying the `-` between the two digits accounts for every number between and **including** those digits.      
 With that said, there are a number of common character groups that have their own shortcuts...
 
-  - `\d` Any digit, or number
-  - `\w` A word character
-  - `\s` Any whitespace character
-  - `\D` Any character that is **NOT** a digit
-  - `\W` Any character that is **NOT** a word character
-  - `\S` Any non-whitespace character
-  - `.` Any character except for newline
+   - `\d` Any digit, or number
+   - `\w` A word character
+   - `\s` Any whitespace character
+   - `\D` Any character that is **NOT** a digit
+   - `\W` Any character that is **NOT** a word character
+   - `\S` Any non-whitespace character
+   - `.` Any character except for newline
      
      
      
