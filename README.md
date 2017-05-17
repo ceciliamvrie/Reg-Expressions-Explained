@@ -8,7 +8,7 @@ better programmer.
 A regular expression is a type of object which can either be constructed by using the `RegExp` constructor
 or written as a literal value by enclosing it with forward slash `/` characters. 
 
-  `var re1 = new RegExp("abc");`
+  `var re1 = new RegExp("abc");` or
   `var re2 = /abc/`
 
 As you can see, both of these regular expression objects have the same **pattern** to them -meaning an 'a'
