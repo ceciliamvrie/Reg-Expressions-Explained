@@ -26,3 +26,29 @@ it will return a **Boolean** telling whether or not the string exists within the
      
 A regular expression containing only letters represents that sequence of letters. If the sequence *abc* occures **anywhere** within the string, it will return true. Given that, even if those letters are still within the string, they must match 
 that exact sequence or the test will return false. 
+
+### Matching a Set of Characters
+When we put an expression between two brackets, we make sure that part of the expression matches any character
+in between that set of brackets, the sequence of the characters inside these brackets *doesn't matter*.
+  
+  `console.log([0, 1, 2, 3, 4, 5, 6, 7, 8, 9].test("dec 2nd, 1992"));
+     //true`
+     
+  `console.log([0-9].test("dec 2nd, 1992"));
+     //true`
+     
+Applying the `-` between the two digits accounts for every number between and **including** those digits.      
+With that said, there are a number of common character groups that have their own shortcuts...
+
+  - `\d` Any digit, or number
+  - `\w` A word character
+  - `\s` Any whitespace character
+  - `\D` Any character that is **NOT** a digit
+  - `\W` Any character that is **NOT** a word character
+  - `\S` Any non-whitespace character
+  - `.` Any character except for newline
+     
+     
+     
+     
+   
