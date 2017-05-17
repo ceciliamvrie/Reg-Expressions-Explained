@@ -19,11 +19,9 @@ It turns out that regular expressions have a pretty simple method called `test` 
 it will return a **Boolean** telling whether or not the string exists within the pattern in the expression.
   
   `console.log(/abc/.test("abcde"));`
-  
      `//true`
      
   `console.log(/abc/.test("abxzy"));`
-  
      `//false`
      
 A regular expression containing only letters represents that sequence of letters. If *abc* occures **anywhere** within 
