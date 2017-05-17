@@ -54,9 +54,9 @@ When you put a `+` after something in a regular expression, it indicates that th
 more than once. 
   
   `console.log(/'\d+'/.test("'123'"));
-     // → true
+     // → true`
 
-   console.log(/'\d+'/.test("''"));
+   `console.log(/'\d+'/.test("''"));
      // → false`
      
 There's a `*` character that you can use that has a similar meaning to the previous character, except it lets 
