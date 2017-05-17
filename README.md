@@ -18,11 +18,11 @@ character followed by a 'b' and then a 'c' at the end.
 It turns out that regular expressions have a pretty simple method called `test` where if you pass it a string, 
 it will return a **Boolean** telling whether or not the string exists within the pattern in the expression.
   
-  `console.log(/abc/.test("abcde"));`
-     `//true`
+  `console.log(/abc/.test("abcde"));
+     //true`
      
-  `console.log(/abc/.test("abxzy"));`
-     `//false`
+  `console.log(/abc/.test("abxzy"));
+     //false`
      
 A regular expression containing only letters represents that sequence of letters. If *abc* occures **anywhere** within 
 the string, it will return true.
