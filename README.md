@@ -21,8 +21,8 @@ it will return a **Boolean** telling whether or not the string exists within the
   `console.log(/abc/.test("abcde"));
      //true`
      
-  `console.log(/abc/.test("abxzy"));
+  `console.log(/abc/.test("abdec"));
      //false`
      
-A regular expression containing only letters represents that sequence of letters. If *abc* occures **anywhere** within 
-the string, it will return true.
+A regular expression containing only letters represents that sequence of letters. If the sequence *abc* occures **anywhere** within the string, it will return true. Given that, even if those letters are still within the string, they must match 
+that exact sequence or the test will return false. 
