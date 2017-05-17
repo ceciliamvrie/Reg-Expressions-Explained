@@ -41,14 +41,38 @@ Applying the `-` between the two digits accounts for every number between and **
 With that said, there are a number of common character groups that have their own shortcuts...
 
    - `\d` Any digit, or number
-   - `\w` A word character
+   - `\w` Any word character
    - `\s` Any whitespace character
    - `\D` Any character that is **NOT** a digit
    - `\W` Any character that is **NOT** a word character
    - `\S` Any non-whitespace character
    - `.` Any character except for newline
+   
+### Matching Groups of Elements 
+You might know how to match single digits, but what if we want to match a group of numbers instead? 
+When you put a `+` after something in a regular expression, it indicates that that element may be **repeated** 
+more than once. 
+  
+  `console.log(/'\d+'/.test("'123'"));
+     // → true
+
+   console.log(/'\d+'/.test("''"));
+     // → false`
      
-     
-     
+There's a `*` character that you can use that has a similar meaning to the previous character, except it lets 
+the pattern match to *zero* instead. 
+Similarily, a `?` placed behind an element means that the pattern marked could be **optional**, or could
+occur either *zero* or *more* times.
+
+  `var neighbor = /neighbou?r/;
+  console.log(neighbor.test("neighbor"));
+    // → true
+  console.log(/'\d*'/.test("''"));
+    // → true`
+
+
+
+
+
      
    
